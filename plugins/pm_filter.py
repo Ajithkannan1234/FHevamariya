@@ -127,8 +127,17 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('please check release date and spelling🙏 \n \n ഗൂഗിളിൽ പൊയി സ്പെല്ലിങ്ങും❗️RELEASE❗️ഡേറ്റും CHECK ചെയുക🥴 \n \n രണ്ടും ശെരി ആയിട്ടും Movie കിട്ടിയില്ലെങ്കിൽ മാത്രം [Msg Me](https://t.me/Testing363738_bot)')
-            await asyncio.sleep(20)
+            hmm = InlineKeyboardMarkup(
+        [
+            [
+                 InlineKeyboardButton("Msg Me🥴", url="https://t.me/Testing363738_bot")
+                 ],[
+                 InlineKeyboardButton("🔎 Search On Google 🔍", url="https://www.imdb.com/search/")
+            ]
+        ]
+    )
+            k = await query.message.edit("please check release date & spelling🙏 \n \n [MSG ME](https://t.me/Testing363738_bot) Only if you don't get the movie even though both are true \n \n രണ്ടും ശെരി ആയിട്ടും Movie കിട്ടിയില്ലെങ്കിൽ മാത്രം [MSG ME👇](https://t.me/Testing363738_bot) ", reply_markup=hmm)
+            await asyncio.sleep(30)
             await k.delete()
 
 
