@@ -116,8 +116,15 @@ async def start(client, message):
                     ],
                     [
                         InlineKeyboardButton("Movie channel😈⚡️", url="https://t.me/+BQP56d3IH0piYjM1"),
+                    ],
+                    [
+                        InlineKeyboardButton("Movie channel😈⚡️", url="https://t.me/+BQP56d3IH0piYjM1"),
+                    ],
+                    [
+                        InlineKeyboardButton("Movie channel😈⚡️", url="https://t.me/+BQP56d3IH0piYjM1"),
                     ]
                     ]
+                    
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
